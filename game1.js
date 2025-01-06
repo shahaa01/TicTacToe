@@ -42,7 +42,9 @@ buttons.forEach((button) => {
             button.disabled = true;
         }
         showWinner(WinPattern);
-        checkDraw();
+        if(!winMsg.innerText) {
+            checkDraw();
+        }
     })
 })
 
